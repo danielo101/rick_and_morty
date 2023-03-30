@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Daniel Vega">
+    <title>Rick & Morty</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- 
+  Actividad Maquetado.
+  Argentina Programa.
+  Comisión c172 - Turno mañana.
+  Profesor: Gabriel Alberini.
+  Para el próximo lunes 13 de marzo de deberá entregar la primer versión del proyecto
+  final respetando los siguientes puntos:
+
+  1- Un único archivo HTML.
+  2- Estructuración del proyecto utilizando las etiquetas semánticas y estructurales
+  correspondientes. Respetar estructura mínima (header, main, footer).
+  3- Nombre de clases intuitivas y descriptivas.
+  4- Agregar comentarios orientativos y descriptivos.
+  5- Controlar apertura y cierre de etiquetas como también anidamiento.
+  6- No vincular hoja de estilos (archivo css). Solo presentar el HTML.
+  7- Colocar ID en las correspondientes secciones del main.
+  8- En caso de utilizar imágenes que las mismas sean dinámicas. Es decir que se
+  encuentren en remoto.
+  -->
+
+    <!-- Encabezado -->
+    <header>
+      <!-- Logotipo -->
+      <div>
+        <img id="rick-marty-logo" src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="logo">
+      </div>
+      <h1>Rick & Morty</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Seccion</a></li>
+          <li><a href="#">Seccion</a></li>
+          <li><a href="#">Seccion</a></li>
+          <li><a href="#">Seccion</a></li>
+          <li><a href="#">Seccion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Seccion principal -->
+    <main>
+
+      <!-- Sinopsis -->
+      <section id="sinopsis">
+        <img id="sinopsis-portada" src="https://rickandmortyapi.com/api/character/avatar/12.jpeg" alt="">
+        <article>
+          <h2>Sinopsis</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio.</p>
+        </article>
+      </section>
+
+      <!-- Personajes -->
+      <h2>Personajes</h2>
+      <section id="personajes">
+        <!-- 
+        Template para la ficha de cada personaje. 
+        Se completa luego con un bucle usando la API
+      -->
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+        <article class="ficha">
+          <figure class="foto-personaje">
+            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <figcaption>Descripcion de foto?</figcaption>
+          </figure>
+          <div class="info-personaje">
+            <h3 class="nombre">Nombre</h3>
+            <p class="genero">Genero</p>
+            <p class="especie">Especie</p>
+            <p class="status">Status</p>
+          </div>
+        </article>
+
+
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+      <!-- HBO Banner -->
+      <section id="hbo-banner">
+        <a href="">
+          <img id="hbo-logo" src="" alt="">
+        </a>
+        <p>Susbcribite para ver la serie!</p>
+      </section>
+      <!-- Informacion de contacto -->
+      <section id="info-footer">
+        <div>
+          Argentina Programa 4.0
+          <!-- falta completar con la demas informacion... -->
+        </div>
+        <address>
+          Daniel Vega.
+          <a href="mailto:daniel@vega.com.ar">Mail</a>
+        </address>
+      </section>
+    </footer>
+
+    <script src="script.js"></script>
+    
+  </body>
+
+</html>
