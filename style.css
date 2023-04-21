@@ -1,15 +1,27 @@
+/* VARIABLES */
+:root {
+  --color-primario: red;
+  --color-secundario: blue;
+  --transpariencia: rgba(0,0,0,0.3);
+  --lateral-padding: 50px;
+  --max-width: 1300px;
+}
+
+
+
+/* GLOBALES */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid lightblue;
 }
 
 /* LAYOUT BODY */
 body{
-  padding: 20px;
   display:flex;
   flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* LAYOUT HEADER */
@@ -17,14 +29,10 @@ header{
   display:flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 5vw;
 }
-header *{
-  margin: 5px;
-  padding: 5px;
-}
-header #rick-marty-logo{
-  width: 100px;
-  height: 100px;
+header img{
+  width: 75px;
 }
 header nav ul{  
   display: flex;
@@ -34,36 +42,67 @@ nav ul li{
   margin: 10px;
   list-style-type: none;  
 }
-nav ul li a{
-  text-decoration: none;
-}
 
 /* LAYOUT MAIN */
 main{
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  justify-content: center;
 }
-main *{
-  margin: 5px;
-  padding: 5px;
+main #title{
+  display: flex;
+  justify-content: center;
+  align-items: end;  
+  height: 95vh;  
 }
 main #sinopsis{
   display: flex;
-  height: 60vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;    
 }
 #sinopsis img{
-  width: 300px;
+  width: 800px;
+}
+#sinopsis article{
+  padding: 0 50px; 
+  max-width: var(--max-width);
+}
+#sinopsis p{
+  padding: 20px 0;
+}
+#pagination{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;  
+}
+#pagination button{
+  background-color: transparent;
+  border: 5px solid blue;
+  color: red;
+  font-size: 1em;
+  height: 100px;
+  width: 150px;
+  border-radius: 15%;
 }
 #personajes{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
+  margin: 10px var(--lateral-padding);  
+  align-self:center;
+  max-width: var(--max-width);
 }
 #personajes .ficha{
   display: flex;
   flex-direction: column;
   width: 300px;
+  margin: 50px 0;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 .ficha .foto-personaje{
   display: flex;
@@ -72,6 +111,12 @@ main #sinopsis{
 }
 .ficha .foto-personaje img{
   width: 100%; 
+}
+.isDead figure img{
+  filter: grayscale(100%);  
+}
+.isDead figure img:hover{
+  filter: none; 
 }
 
 
@@ -95,6 +140,59 @@ footer #info-footer{
   justify-content: space-between;
 }
 
+/* LINKS */
+a{
+  text-decoration: none;
+}
+a:link {
+  color: rgb(255,255,255);
+  text-shadow: 1px 1px 3px black;
+}
+a:visited {
+  color: rgb(255,255,255);
+}
+a:hover {
+  color: rgb(255,255,255);
+  text-shadow: 1px 1px 2px black;
+  transition: text-shadow 2s;
+}
+a:active {
+  color: rgb(255,255,255);
+} 
+
+
+/* IMAGES */
+body{
+  background-image: url("/home/freelancer/Mega/Estudio/Cursos/Argentina Programa 4.0/RickMorty/img/cover.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{  
+  background-color: var(--transpariencia);
+}
+header img{
+    border: 3px solid black;
+    border-radius: 50%;
+}
+main #title{
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+main #sinopsis{
+  background: rgb(0,0,0); 
+}
+
+/* FONTS */
+nav ul li a{
+  font-size: 1em;
+}
+#sinopsis p{
+  color: #888888;
+  font-size: 1.3em;
+}
+
+
+/* ANIMATION */
 
 
 

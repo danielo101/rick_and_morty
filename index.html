@@ -4,45 +4,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Daniel Vega">
-    <title>Rick y Morty</title>
+    <title>Rick & Morty</title>
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <!-- 
-  Actividad Maquetado.
-  Argentina Programa.
-  Comisión c172 - Turno mañana.
-  Profesor: Gabriel Alberini.
-  Para el próximo lunes 13 de marzo de deberá entregar la primer versión del proyecto
-  final respetando los siguientes puntos:
-
-  1- Un único archivo HTML.
-  2- Estructuración del proyecto utilizando las etiquetas semánticas y estructurales
-  correspondientes. Respetar estructura mínima (header, main, footer).
-  3- Nombre de clases intuitivas y descriptivas.
-  4- Agregar comentarios orientativos y descriptivos.
-  5- Controlar apertura y cierre de etiquetas como también anidamiento.
-  6- No vincular hoja de estilos (archivo css). Solo presentar el HTML.
-  7- Colocar ID en las correspondientes secciones del main.
-  8- En caso de utilizar imágenes que las mismas sean dinámicas. Es decir que se
-  encuentren en remoto.
-  -->
 
     <!-- Encabezado -->
     <header>
       <!-- Logotipo -->
-      <div>
-        <img id="rick-marty-logo" src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="logo">
-      </div>
-      <h1>Rick & Morty</h1>
+      <a href="#home">
+        <img src="/home/freelancer/Mega/Estudio/Cursos/Argentina Programa 4.0/RickMorty/img/logo.png" alt="Logo Rick and Morty">
+      </a>
       <nav>
         <ul>
-          <li><a href="#">Seccion</a></li>
-          <li><a href="#">Seccion</a></li>
-          <li><a href="#">Seccion</a></li>
-          <li><a href="#">Seccion</a></li>
-          <li><a href="#">Seccion</a></li>
+          <li><a href="#personajes">PERSONAJES</a></li>
+          <li><a href="#hbo-banner">VER SHOW</a></li>
+          <li><a href="#footer">ABOUT</a></li>
         </ul>
       </nav>
     </header>
@@ -50,26 +28,32 @@
     <!-- Seccion principal -->
     <main>
 
+      <section id="title">
+        <img src="/home/freelancer/Mega/Estudio/Cursos/Argentina Programa 4.0/RickMorty/img/title.svg" alt="Logo Rick and Morty">
+      </section>
+
       <!-- Sinopsis -->
       <section id="sinopsis">
-        <img id="sinopsis-portada" src="https://rickandmortyapi.com/api/character/avatar/12.jpeg" alt="">
+        <!--h1>Rick & Morty</h1-->
         <article>
-          <h2>Sinopsis</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio.Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus beatae maiores inventore itaque doloremque. Consequatur, iusto, at ipsum nihil quae nemo provident quisquam alias, repellat laborum voluptate excepturi optio. Distinctio.</p>
+          <p>Rick and Morty es una comedia de animación de ciencia ficción que se estrenó por primera vez en Adult Swim en 2013. La serie sigue las aventuras de un excéntrico y alcohólico científico llamado Rick Sánchez y su nieto bienintencionado pero a menudo torpe Morty Smith. A lo largo de sus cinco temporadas, el programa se ha convertido en un favorito de los fans debido a su mezcla de humor oscuro, narrativa compleja y conceptos de ciencia ficción extravagantes.</p>
+          <p>La serie se centra en Rick, un científico brillante pero profundamente problemático que tiene la habilidad de viajar entre diferentes dimensiones y universos paralelos. A menudo lleva a Morty en sus aventuras, que frecuentemente implican salvar el universo o lidiar con amenazas interdimensionales. A lo largo del camino, la pareja enfrenta una variedad de desafíos, incluyendo invasiones alienígenas, paradojas de viaje en el tiempo y encuentros con criaturas extrañas.</p>
+          <p>A pesar de su entorno fantástico, el programa a menudo se adentra en temas serios como la depresión, la adicción y el existencialismo. Rick, en particular, lucha con sus propios demonios y a menudo recurre al alcohol como mecanismo de afrontamiento. Morty también se enfrenta a sus propios desafíos, incluyendo la presión de seguir los pasos de su abuelo y el trauma de las experiencias que tiene en sus aventuras. En general, Rick and Morty es una serie emocionante y creativa que combina humor inteligente con ciencia ficción audaz y profunda exploración de temas más oscuros.</p>
         </article>
       </section>
 
+
+
       <!-- Personajes -->
-      <h2>Personajes</h2>
+      <!--h2>Personajes</h2-->
       <section id="personajes">
         <!-- 
         Template para la ficha de cada personaje. 
         Se completa luego con un bucle usando la API
-      -->
-        <article class="ficha">
+        -->
+        <!--article class="ficha">
           <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
+            <img src="" alt="">
             <figcaption>Descripcion de foto?</figcaption>
           </figure>
           <div class="info-personaje">
@@ -78,169 +62,19 @@
             <p class="especie">Especie</p>
             <p class="status">Status</p>
           </div>
-        </article>
+        </article-->
+      </section>
 
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
-        <article class="ficha">
-          <figure class="foto-personaje">
-            <img src="https://rickandmortyapi.com/api/character/avatar/22.jpeg" alt="">
-            <figcaption>Descripcion de foto?</figcaption>
-          </figure>
-          <div class="info-personaje">
-            <h3 class="nombre">Nombre</h3>
-            <p class="genero">Genero</p>
-            <p class="especie">Especie</p>
-            <p class="status">Status</p>
-          </div>
-        </article>
-
+      <!-- Paginacion  -->
+      <div id="pagination">
+        <button id="prev-page" onclick="fetchData(this.value)">PREV</button>
+        <button id="next-page" onclick="fetchData(this.value)">NEXT</button>
+      </div>
 
     </main>
 
     <!-- Pie de pagina -->
-    <footer>
+    <footer id="footer">
       <!-- HBO Banner -->
       <section id="hbo-banner">
         <a href="">
