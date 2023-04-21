@@ -106,7 +106,7 @@ main #sinopsis{
   flex-wrap: wrap;
   padding: 100px 100px 10px 100px;
   align-self:center;
-  background-image: url("/home/freelancer/Mega/Estudio/Cursos/Argentina Programa 4.0/RickMorty/img/personajes.webp");
+  background-image: url("/img/personajes.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background: linear-gradient(0deg, rgba(153,50,168,1) 0%, rgba(0,0,0,1) 100%);
@@ -245,7 +245,7 @@ footer svg{
 
 /* IMAGES */
 body{
-  background-image: url("/home/freelancer/Mega/Estudio/Cursos/Argentina Programa 4.0/RickMorty/img/cover.webp");
+  background-image: url("/img/cover.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
