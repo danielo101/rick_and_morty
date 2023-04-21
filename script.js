@@ -194,15 +194,13 @@ function setPagination(pagination){
   else{
     $next.removeAttribute("disabled", true);
   }
+  // Redirige a la seccion personajes con cada click, excepto en la carga inicial.
+  if($prev.value !== "null") {
+    const seccion = document.getElementById("personajes");
+    seccion.scrollIntoView({ behavior: "smooth" });
+  }
 
-  /* TAMBIEN LO HACE ONLOAD*/
-
-  // Redirige a la seccion personajes
-  const seccion = document.getElementById("personajes");
-  seccion.scrollIntoView({ behavior: "smooth" });
 }
-
-
 
 /**
  * Recibe el objeto que contiene la informacion de los personajes
@@ -220,7 +218,7 @@ function createCharacters(personajes){
     // Genera el contenido para las tarjetas
     for(let i = 0; i < personajes.length; i++){
         $contenedor.innerHTML += `
-            <article class="ficha">
+            <article class="ficha border-transparent">
               <figure class="foto-personaje">
                 <img
                   src="${personajes[i].image}"
@@ -233,7 +231,7 @@ function createCharacters(personajes){
                 <h3 class="nombre"></h3>
                 <p class="genero">Genero: ${personajes[i].gender}</p>
                 <p class="especie">Especie: ${personajes[i].species}</p>
-                <p class="status">Estado: ${personajes[i].status}</p>
+                <p class="status"><span class="dead-circle"></span>Estado: ${personajes[i].status}</p>
               </div>
             </article>
         `;
@@ -245,15 +243,6 @@ function createCharacters(personajes){
         }
 
     }
-
-    // Agrega la clase "isDead" a <figure>
-    //let $deadStatus = document.getElementsByClassName("foto-personaje");
-
-    // for(let i = 0; i < personajes.length; i++){
-    //   if(personajes[i].status == "Dead"){
-    //     $deadStatus[i].classList.add("isDead");
-    //   }
-    // }
 }
 
 
