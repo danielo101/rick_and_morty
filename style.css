@@ -163,7 +163,7 @@ a:active {
 
 /* IMAGES */
 body{
-  background-image: url("/home/freelancer/Mega/Estudio/Cursos/Argentina Programa 4.0/RickMorty/img/cover.webp");
+  background-image: url("img/cover.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
