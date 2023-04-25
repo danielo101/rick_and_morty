@@ -85,17 +85,53 @@ main #sinopsis{
   align-items: center;
   justify-content: center;
   height: 80vh;    
+  color: var(--color-text);
 }
 #sinopsis img{
   width: 800px;
 }
 #sinopsis article{
   padding: 0 50px; 
-  max-width: var(--max-width);
-  color: var(--color-text);
+  max-width: var(--max-width);  
 }
 #sinopsis p{
   padding: 20px 0;
+}
+
+/* FILTROS */
+#filters *{
+  padding: 10px;
+}
+#filters{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: var(--color-text);
+}
+#filters div {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+#filters div details{
+  width: 50%;
+  height: 100px;
+  text-align: center;
+}
+#filters div details button{
+  background-color: transparent;
+  color: var(--color-text);
+  border: 2px solid var(--color-purple);
+  border-radius: 10px;
+  margin: 0 10px;
+}
+#filters div details button:hover{
+  background-color: var(--color-purple);
+}
+#filters div details button:active{
+  background-color: black;
 }
 
 /*FICHA DE PERSONAJES */
@@ -106,7 +142,7 @@ main #sinopsis{
   flex-wrap: wrap;
   padding: 100px 100px 10px 100px;
   align-self:center;
-  background-image: url("/img/personajes.webp");
+  background-image: url("img/personajes.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background: linear-gradient(0deg, rgba(153,50,168,1) 0%, rgba(0,0,0,1) 100%);
@@ -245,7 +281,7 @@ footer svg{
 
 /* IMAGES */
 body{
-  background-image: url("/img/cover.webp");
+  background-image: url("img/cover.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }

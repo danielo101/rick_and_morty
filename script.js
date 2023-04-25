@@ -1,4 +1,33 @@
 /**
+* Funciona perfecto!
+*/
+function filterCards(filter, value){
+ fetch("https://rickandmortyapi.com/api/character/?" + filter + "=" + value)
+  .then((response) => {
+      // Toma la respuesta de la promesa y le da formato json
+      return response.json();
+  })
+  .then((data) => {
+      /**
+       * Toma la propiedad 'results' del json y los envia a la
+       * funcion createCharacters() generar las tarjetas de los personajes.
+       */
+      createCharacters(data.results);
+
+      /**
+       * Toma la propiedad 'info' del json que contiene las url de
+       * la paginacion y los envia a setPagination()
+       */
+      setPagination(data.info);
+     
+  })
+
+}
+
+
+
+
+/**
  * Llama al funcion fetchData() por primera vez para generar los
  * primeros 20 personajes.
  */
@@ -50,6 +79,9 @@ function setPagination(pagination){
   // Estabece los contenedores para los botones
   let $prev = document.getElementById("prev-page");
   let $next = document.getElementById("next-page");
+  
+  // CANTIDAD DE RESULTADOS
+  let cantResults = document.getElementById("cant-resultados").innerHTML =  pagination.count;
 
   // Establece al tributo "value" con la URL correspndiente
   $prev.setAttribute("value", pagination.prev);

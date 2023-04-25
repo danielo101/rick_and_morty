@@ -14,7 +14,7 @@
     <header>
       <!-- Logotipo -->
       <a href="#home">
-        <img src="/img/logo.png" alt="Logo Rick and Morty">
+        <img src="img/logo.png" alt="Logo Rick and Morty">
       </a>
       <nav>
         <ul>
@@ -29,12 +29,12 @@
     <main>
 
       <section id="title">
-        <img src="/img/title.svg" alt="Logo Rick and Morty">
+        <img src="img/title.svg" alt="Logo Rick and Morty">
       </section>
 
       <!-- Sinopsis -->
       <section id="sinopsis">
-        <!--h1>Rick & Morty</h1-->
+        <h1>Sinopsis</h1>
         <article>
           <p>Rick and Morty es una comedia de animación de ciencia ficción que se estrenó por primera vez en Adult Swim en 2013. La serie sigue las aventuras de un excéntrico y alcohólico científico llamado Rick Sánchez y su nieto bienintencionado pero a menudo torpe Morty Smith. A lo largo de sus cinco temporadas, el programa se ha convertido en un favorito de los fans debido a su mezcla de humor oscuro, narrativa compleja y conceptos de ciencia ficción extravagantes.</p>
           <p>La serie se centra en Rick, un científico brillante pero profundamente problemático que tiene la habilidad de viajar entre diferentes dimensiones y universos paralelos. A menudo lleva a Morty en sus aventuras, que frecuentemente implican salvar el universo o lidiar con amenazas interdimensionales. A lo largo del camino, la pareja enfrenta una variedad de desafíos, incluyendo invasiones alienígenas, paradojas de viaje en el tiempo y encuentros con criaturas extrañas.</p>
@@ -44,8 +44,32 @@
 
 
 
+
+
+       <!-- Filtros -->
+      <section id="filters">
+        <h2 id="filter-title">Personajes</h2>
+        <p><span id="cant-resultados"></span> resultados</p>
+        <div>
+          <details>
+              <summary>Estado</summary>
+              <button onclick="filterCards('status', 'Alive')">Vivo</button>
+              <button onclick="filterCards('status', 'Dead')">Muerto</button>
+              <button onclick="filterCards('status', 'unknown')">Desconocido</button>
+          </details>
+
+          <details>
+              <summary>Género</summary>
+              <button onclick="filterCards('gender', 'Male')">Male</button>
+              <button onclick="filterCards('gender', 'Female')">Female</button>
+              <button onclick="filterCards('gender', 'Genderless')">Genderless</button>
+              <button onclick="filterCards('gender', 'unknown')">Desconocido</button>
+          </details>
+        </div>
+
+      </section>
+
       <!-- Personajes -->
-      <!--h2>Personajes</h2-->
       <section id="personajes">
         <!-- 
         Template para la ficha de cada personaje. 
